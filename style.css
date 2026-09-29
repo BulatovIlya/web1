@@ -6,6 +6,9 @@ img{
 .forma{
     margin: 10px;
 }
+form{
+    background-image: url('static/img/backgroundform.jpg');
+}
 textarea{
     max-width: 300px;
     max-height: 250px;
