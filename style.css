@@ -76,3 +76,40 @@ textarea{
     cursor: pointer;
     padding: 12px 24px;
 }
+
+.tab_menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background: linear-gradient(#fff 0%, #d8eae9 15%, #4f8585 100%);
+}
+
+.tab_menu li {
+    position: relative;
+    margin-right: -15px;
+}
+
+.tab_menu li:nth-child(1) { z-index: 4; }
+.tab_menu li:nth-child(2) { z-index: 3; }
+.tab_menu li:nth-child(3) { z-index: 2; }
+.tab_menu li:nth-child(4) { z-index: 1; }
+
+.tab_menu a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px 0 25px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    background: linear-gradient(#fff 0%, #cbe3e1 20%, #4a8282 100%);
+    border-radius: 0 30px 30px 0 / 0 50px 50px 0;
+    box-shadow: 4px 0 8px #0004;
+    transition: background 0.2s;
+}
+
+.tab_menu a:hover {
+    background: linear-gradient(#fff 0%, #dcf0ee 20%, #599797 100%);
+}
