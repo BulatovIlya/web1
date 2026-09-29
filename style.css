@@ -8,6 +8,7 @@ img{
 }
 form{
     background-image: url('static/img/backgroundform.jpg');
+    background-repeat: no-repeat;
 }
 textarea{
     max-width: 300px;
@@ -59,4 +60,19 @@ textarea{
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.button_submit_Style{
+    background: linear-gradient( #5A98D0 0%, #8A5AF9 100%);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
 }
