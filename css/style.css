@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(170, 163, 163);
+}
+
+.img_header {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    width: auto;
+    padding: 10px;
+}
+
+.link_header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+}
+
+.link_header li a {
+    text-decoration: none;
+    color: black;
+}
+
+.link_header li a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.main_title {
+    background-color: rgb(133, 126, 126);
+    text-align: center;
+}
+
+.main_content {
+    background-color: rgb(151, 119, 119);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 20px
+}
+.main_content img{
+    background-color: rgb(109, 87, 87);;
+}
+
+.main_content h2 {
+    margin: 10px;
+}
+
+.callback{
+    background-color: rgb(136, 104, 104);;
+}
+
+.form_img_and_form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.callback h2 {
+    background-color: rgb(63, 50, 50);;
+    display: block;
+    padding: 14px;
+    text-align: left;
+}
+
+.form_img_and_form img {
+    width: 300px;
+    display: block;
+    padding-left: 200px;
+    background-color: rgb(90, 74, 74);;
+}
+
+.form_img_and_form form {
+    padding: 30px;
+    background-color: rgb(92, 67, 67);
+}
+
+.form-section {
+    margin: 10px;
+}
+
+footer{
+    background-color: rgb(94, 68, 68);
+}
+footer h3{
+    text-align: center;
+    background-color: rgb(139, 124, 124);
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:60px
+}
+.contacts_name{
+    background-color: rgb(66, 45, 45);
+}
+.contacts_text{
+    background-color: rgb(85, 61, 61);
+}
+
+.contacts_name ul{
+    list-style: none;
+}
+
+footer p{
+    text-align: center
+}
