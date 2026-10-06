@@ -4,96 +4,255 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>ЛБ-3</title>
+    <title>LB3</title>
 </head>
 
 <body>
+
     <header>
-        <img class="img_header" src="static/img/logo.png" alt="логотип сайта">
+        <p class="title">IT WEBSITE</p>
         <nav>
             <ul class="link_header">
                 <li>
-                    <a href="#main"> Главная</a>
+                    <a href="#service"> Services</a>
                 </li>
 
                 <li>
-                    <a href="#callback"> Оставить заявку</a>
+                    <a href="#media"> Media</a>
                 </li>
                 <li>
-                    <a href="#contact"> Контакты</a>
+                    <a href="#faq">FAQ</a>
                 </li>
             </ul>
         </nav>
     </header>
     <hr>
     <main>
-        <section class="main_title" id="main">
-            <h1>
-                Заголовок страницы
+        <section class="main_up">
+            <h1>Development of mobile <br>
+                applications and web services of any complexity
             </h1>
-            <p>Вступительный текст</p>
         </section>
-        <section class="main_content">
-            <div class="text_main_content">
-                <h2>Блок подробной информации</h2>
-                <p>Какая-то информация</p>
+        <section class="main_form">
+            <div class="form_field">
+                <div class="form-section">
+                    <label>Phone number</label>
+                    <input type="tel">
+                </div>
+                <div class="form-section">
+                    <label>Full name</label>
+                    <input type="text">
+                </div>
             </div>
-            <div class="img_main_content">
-                <img src="static/img/img_main_content.png">
-            </div>
+            <button class="button_get" type="submit">
+                Get consultation
+            </button>
+            </form>
         </section>
     </main>
     <hr>
-    <section class="callback" id="callback">
-        <h2>Остались вопросы? Оставьте заявку на обратный звонок</h2>
-        <div class="form_img_and_form">
-            <form>
+    <section class="Full_development_cycle">
+        <div class="left_part">
+            <h2>Full development cycle</h2>
+            <p>We use proven technologies</p>
+            <h3>Web</h3>
+            <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/ <br>
+                Nuxt / MySQL / Laravel / GO lang / django / Python</p>
+            <h3>Mobile</h3>
+            <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm <br>
+                / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
+        </div>
+        <div class="right_part">
+            <ul>
+                <li>
+                    iOS development
+                </li>
+                <li>
+                    Android development
+                </li>
+                <li>
+                    Web development
+                </li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="developed">
+        <h2>Developed more than 100 <br>
+            projects in 15 industries
+        </h2>
+        <div class="developed_caterogry">
+            <p>Social media</p>
+            <p>Fitness and sport</p>
+            <p>Bank</p>
+            <p>Construction</p>
+            <p>Game projects</p>
+        </div>
+    </section>
+    <hr>
+    <section class="projects" id="service">
+        <h2>
+            Projects we are proud of
+        </h2>
+        <p>
+            Our software development company is truly proud of the wonderful clients we have <br>
+            worked with. We enjoy a long-term partnership
+        </p>
+        <div class="projects_middle_content">
+            <a href="#">I-teka</a>
+            <a href="#">Dauletten</a>
+            <a href="#">Guru Bosch</a>
+            <a href="#">Santo</a>
+            <a href="#">Home Credit Bank</a>
+            <a href="#">BI Partners</a>
+            <a href="#">Europharma</a>
+            <a href="#" class="link_right">View 100 more projects</a>
+        </div>
+        <div class="project_information">
+            <h2>
+                I-teka
+            </h2>
+            <p>
+                The application is designed to search for drugs by availability in pharmacies in cities.<br>
+                During quarantine, the application helped many people,
+                which gives more value.
+            </p>
+            <p>
+                Business analysis / iOS / Android / QA / UI/UX Design
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section class="discuss">
+        <div class="discuss_text">
+            <h3>
+                Let's discuss <br>
+                Your project
+            </h3>
+            <p>
+                Let's figure out how to create an effective application, <br>
+                its cost and terms of its development
+            </p>
+        </div>
+        <form>
+            <div class="form_field">
                 <div class="form-section">
-                    <label>Имя</label>
+                    <label>Phone number</label>
+                    <input type="tel">
+                </div>
+                <div class="form-section">
+                    <label>Full name</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <button class="button_discuss" type="submit">
+                Discuss the project
+            </button>
+        </form>
+    </section>
+    <hr>
+    <section class="development_stages">
+        <h2>Application Development Stages</h2>
+        <div class="card">
+            Analysis
+        </div>
+        <div class="card">
+            Design
+        </div>
+        <div class="card">
+            Development
+        </div>
+        <div class="card">
+            Testing
+        </div>
+        <div class="card">
+            Launching
+        </div>
+        <div class="card">
+            Support
+        </div>
+    </section>
+    <hr>
+    <section class="team">
+        <h2>
+            Our team
+        </h2>
+        <p>
+            Thousand is a full-cycle digital production company with its own product analytics,<br>
+            design, web and mobile development.
+        </p>
+    </section>
+    <hr>
+    <section class="get_book" id="media">
+        <h2>
+            Get the book for free by leaving <br>
+            your contacts
+        </h2>
+        <form>
+            <div class="form_field">
+                <div class="form-section">
+                    <label>Phone number</label>
+                    <input type="tel">
+                </div>
+                <div class="form-section">
+                    <label>Full name</label>
                     <input type="text">
                 </div>
                 <div class="form-section">
                     <label>Email</label>
-                    <input type="Email">
+                    <input type="email">
                 </div>
-                <div class="form-section">
-                    <label>Номер телефона</label>
-                    <input type="phone">
-                </div>
-                <button type="submit">Отправить</button>
-            </form>
-            <img src="static/img/phone.png">
-        </div>
+            </div>
+            <button class="button_discuss" type="submit">
+                Send me ebook to my mail
+            </button>
+        </form>
     </section>
     <hr>
-    <footer id="contact">
-        <h3>Контакты</h3>
-        <div class="contacts">
-            <div class="contacts_name">
-                <ul>
-                    <li>
-                        <strong>Директор</strong>
-                        <ul>
-                            <li>Телефон: +7999999999</li>
-                            <li>Email: sdsdasd@mail.ru</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Менеджер</strong>
-                        <ul>
-                            <li>Телефон: +788888888</li>
-                            <li>Email: fdfsdfsd@yandex.ru</li>
-                        </ul>
-                    </li>
-                </ul>
+    <section class="faq" id ="faq">
+        <h2>
+            FAQ
+        </h2>
+        <div class="faq_content">
+            <div class="card">
+                What is the cost of a mobile application?
             </div>
-            <div class="contacts_text">
-                    <p> какая-то информация</p>
+            <div class="card">
+                Do you provide a guarantee for the mobile application?
+            </div>
+            <div class="card">
+                How long will development take?
+            </div>
+            <div class="card">
+                I will not tell my idea, do you guarantee confidentiality?
             </div>
 
         </div>
-        <p>Все права защищены</p>
+    </section>
+    <hr>
+    <footer>
+        <h2>IT WEBSITE</h2>
+        <div class="footer_content">
+            <div class="footer_content_item">
+                <span>Contact nums</span>
+                <a href="tel:+77783959026">+7 (778) 395 90 26</a>
+            </div>
+            <div class="footer_content_item">
+                <span>Post</span>
+                <a href="mailto:mail@mail.com">mail@mail.com</a>
+            </div>
+            <div class="footer_content_item">
+                <span>Adress</span>
+                <p>City city, steet st. 90</p>
+            </div>
+            <div class="footer_content_item">
+                <span>Leave a request</span>
+                <a href="#">Leave a request</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
