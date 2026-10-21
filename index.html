@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="page_background">
+    <div class="page_background" id="page_background_pc">
         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
         <header class="header_mobile">
@@ -35,7 +35,7 @@
             <label for="menu-toggle" class="close-btn" id="closeBtn">&times;</label>
 
             <div class="mobile-menu-logo">
-                <span style="color: #2563eb; font-weight: bold; font-size: 22px;">IT WEBSITE</span>
+                <span style="color: #2563eb; font-weight: bold; font-size: 36px;">IT WEBSITE</span>
             </div>
 
             <nav class="mobile-nav-links">
@@ -48,12 +48,13 @@
 
             <div class="mobile-menu-contacts">
                 <div class="contact_group">
-                    <a href="tel:+71111111111" class="contact_link"> +7 (111) 111 11 11</a>
-                    <a href="tel:+71111111111" class="contact_link"> +7 (111) 111 11 11</a>
+                    <a href="tel:+71111111111" class="contact_link">
+                        <img src="img/phone.png" alt="Телефон" class="phone_icon" /> +7 (111) 111 11 11</a>
+                    <a href="tel:+71111111111" class="contact_link">
+                        <img src="img/phone.png" alt="Телефон" class="phone_icon" /> +7 (111) 111 11 11</a>
                 </div>
                 <div class="contact_group">
-                    <a href="mailto:itcompany@mail.com" class="contact_link"><img src="img/email.png" alt="Email"
-                            class="email_icon" /> itcompany@mail.com</a>
+                    <a href="mailto:itcompany@mail.com" class="contact_link"><img src="img/email.png" alt="Email" class="email_icon" />itcompany@mail.com</a>
                 </div>
             </div>
         </div>
@@ -89,11 +90,11 @@
         <main>
             <h1>
                 Development of <span class='text_blue'>mobile <br>
-                    applications</span> and <span class='text_blue'>web services</span> of <br>
+                    applications</span> and <span class='text_blue'>web <br class="br_mob"> services</span> of <br class="br_pc">
                 any complexity
             </h1>
             <p>
-                We create mobile applications for iOS, Android that transfer your business to mobile<br>
+                We create mobile applications for iOS, Android that <br class="br_mob"> transfer your business to mobile<br class="br_pc">
                 applications of your customers' devices
             </p>
             <div class="form">
@@ -115,7 +116,7 @@
                             <input type="text" placeholder="Агадиль">
                         </div>
                         <button class="button_form" type="submit">
-                            Get <br>
+                            Get <br class="br_pc">
                             consultation
                         </button>
                     </div>
@@ -263,7 +264,7 @@
                         Europharma
                     </a>
                 </div>
-                <div class="links_bar_button">
+                <div class="links_bar_button" id="view_100pc">
                     <a href="view_100">
                         View 100 more projects
                     </a>
@@ -271,8 +272,13 @@
             </div>
             <div class="text_and_img_page_3">
                 <div class="text_and_img_page_3_left">
+                    <img src="img/1.png" id="iteka_img_425">
                     <h2 id="I-teka">
                         I-teka
+                        <div class="links_bar_button" id="view_100_768">
+                    <a href="view_100">
+                        View 100 more projects
+                    </a>
                     </h2>
                     <p class="p_page_3">
                         The application is designed to search for drugs by availability in pharmacies in cities. <br>
@@ -308,6 +314,11 @@
                         <img src="img/ios.png">
                         <img src="img/android.png">
                     </div>
+                    <div class="links_bar_button" id="view_100425">
+                    <a href="view_100">
+                        View 100 more projects
+                    </a>
+                </div>
                 </div>
 
                 <div class="text_and_img_page_3_right">
@@ -317,7 +328,14 @@
         </div>
         <div class="form_discuss">
             <div class="form_discuss_left">
-
+                <h2>
+                    Let's discuss <br>
+                    Your project
+                </h2>
+                <p>
+                    Let's figure out how to create an effective application, <br>
+                    its cost and terms of its development
+                </p>
             </div>
             <div class="form_discuss_right">
                 <div class="form">
@@ -351,7 +369,7 @@
         <h2>
             IT WEBSITE
         </h2>
-        <div class="footer_info">
+        <div class="footer_info" id="footer_info">
             <div class="footer_content">
                 <div class="footer_content_row_img">
                     <img src="img/phone_footer.png">
