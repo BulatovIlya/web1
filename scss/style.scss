@@ -844,6 +844,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+      .br_mob {
+        display: inline-block;
+    }
     .page_background {
         &::before {
             width: 200px;
