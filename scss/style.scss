@@ -13,7 +13,6 @@ $color-bg-light: #F2F4F7;
 $color-white: #FFFFFF;
 $color-header-bg: #fffefe;
 
-
 @mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
     display: flex;
     flex-direction: $direction;
@@ -24,45 +23,25 @@ $color-header-bg: #fffefe;
     }
 }
 
-
 @keyframes moveCol1 {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 -1500px;
-    }
+    0% { background-position: 0 0; }
+    100% { background-position: 0 -1500px; }
 }
-
 
 @keyframes moveCol2 {
-    0% {
-        background-position: 0 -1500px;
-    }
-    100% {
-        background-position: 0 0;
-    }
+    0% { background-position: 0 -1500px; }
+    100% { background-position: 0 0; }
 }
 
-
 @keyframes moveColMobile1 {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 -800px;
-    }
+    0% { background-position: 0 0; }
+    100% { background-position: 0 -800px; }
 }
 
 @keyframes moveColMobile2 {
-    0% {
-        background-position: 0 -800px;
-    }
-    100% {
-        background-position: 0 0;
-    }
+    0% { background-position: 0 -800px; }
+    100% { background-position: 0 0; }
 }
-
 
 *,
 *::before,
@@ -104,20 +83,17 @@ body {
     display: block;
 }
 
-
 .page_background {
     flex: 1 0 auto;
     position: relative;
     overflow: hidden;
     background-color: $color-bg-light;
 
-    
     > * {
         position: relative;
         z-index: 2;
     }
 
-    
     &::before,
     &::after {
         content: "";
@@ -138,7 +114,6 @@ body {
         animation: moveCol1 25s linear infinite;
     }
 
-    
     &::after {
         right: 30px;
         background-image: url('../img/bg-col-2.png');
@@ -265,7 +240,6 @@ header {
     line-height: 1;
     cursor: pointer;
 }
-
 
 .form {
     width: 676px;
@@ -435,7 +409,6 @@ label {
     }
 }
 
-
 .page_3 {
     background-color: $color-bg-light;
     @include flex(column);
@@ -603,6 +576,219 @@ label {
     }
 }
 
+/* --- Application Development Stages --- */
+.Application_Development_Stages {
+    @include flex(row, space-between, stretch, 32px);
+    flex-wrap: wrap;
+    margin: 60px 80px;
+
+    h2 {
+        width: 100%;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &_left,
+    &_right {
+        flex: 1;
+        min-width: 0;
+        @include flex(column, flex-start, stretch, 24px);
+    }
+
+    &_card {
+        padding: 24px;
+        background: $color-white;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    &_up {
+        @include flex(row, flex-start, center, 12px);
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 12px;
+
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    &_down {
+        font-size: 14px;
+        line-height: 1.5;
+        color: $color-gray-text;
+        margin: 0;
+    }
+}
+
+/* --- Our team --- */
+.Our_team {
+    background-color: $color-bg-light;
+    @include flex(row, space-between, center, 60px);
+    padding: 60px 80px;
+
+    &_left {
+        flex: 1;
+        @include flex(column);
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &_desc {
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0 0 20px 0;
+    }
+
+    .team_stats span {
+        font-size: 36px;
+    }
+
+    &_bottom {
+        font-size: 14px;
+        line-height: 1.5;
+        color: $color-gray-text;
+        margin-top: 30px;
+    }
+
+    &_right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_img img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    &_img_mob {
+        display: none;
+    }
+}
+
+/* --- Book section --- */
+.book_section {
+    background-color: $color-main;
+    background-image: url("../img/Fr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 80px;
+    @include flex(row, space-between, center, 40px);
+
+    &_left {
+        flex: 1;
+        max-width: 550px;
+
+        h2 {
+            color: $color-white;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .book_form {
+        width: 100%;
+        max-width: 440px;
+        min-height: auto;
+        padding: 25px;
+
+        form {
+            @include flex(column, flex-start, stretch, 18px);
+        }
+    }
+
+    .book_btn {
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        padding: 0;
+        margin-top: 8px;
+    }
+
+    &_right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 380px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .book_img_mob {
+        display: none;
+    }
+}
+
+/* --- FAQ --- */
+.faq_section {
+    margin: 60px 80px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .faq_container {
+        @include flex(row, flex-start, flex-start, 30px);
+    }
+
+    .faq_col {
+        flex: 1;
+        @include flex(column, flex-start, stretch, 20px);
+    }
+
+    .faq_item {
+        background: $color-white;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid #EAECF0;
+    }
+
+    .faq_question {
+        @include flex(row, space-between, center);
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-dark;
+    }
+
+    .faq_icon {
+        font-size: 26px;
+        color: $color-main;
+        line-height: 1;
+
+        &.close {
+            color: $color-gray-footer;
+        }
+    }
+
+    .faq_answer {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: $color-gray-text;
+        border-top: 1px solid #EAECF0;
+        padding-top: 16px;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+}
 
 footer {
     background-color: $color-dark;
@@ -657,7 +843,6 @@ footer {
     font-size: 13px;
 }
 
-
 @media (max-width: 768px) {
     .page_background {
         &::before {
@@ -667,6 +852,62 @@ footer {
         &::after {
             width: 200px;
             right: -30px;
+        }
+    }
+
+    .Application_Development_Stages {
+        margin: 30px 20px;
+        flex-direction: column;
+        gap: 20px;
+
+        &_left,
+        &_right {
+            gap: 20px;
+        }
+    }
+
+    .Our_team {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+
+        &_right {
+            display: none;
+        }
+
+        &_img_mob {
+            display: block;
+            margin: 15px 0;
+        }
+    }
+
+    .book_section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+
+        &_right {
+            display: none;
+        }
+
+        .book_img_mob {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            img {
+                max-width: 280px;
+                width: 100%;
+            }
+        }
+    }
+
+    .faq_section {
+        margin: 30px 20px;
+
+        .faq_container {
+            flex-direction: column;
+            gap: 15px;
         }
     }
 
@@ -873,6 +1114,59 @@ footer {
         display: none;
     }
 
+    .Application_Development_Stages {
+        margin: 20px 15px;
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .Our_team {
+        padding: 25px 15px;
+
+        &_left h2 {
+            font-size: 26px;
+        }
+
+        .team_stats {
+            flex-wrap: wrap;
+            gap: 15px;
+
+            span {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .book_section {
+        padding: 25px 15px;
+
+        &_left h2 {
+            font-size: 24px;
+        }
+
+        .book_form {
+            padding: 15px;
+        }
+    }
+
+    .faq_section {
+        margin: 20px 15px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .faq_question {
+            font-size: 15px;
+        }
+
+        .faq_item {
+            padding: 16px;
+        }
+    }
+
     .footer_content {
         width: 154px;
         height: 54px;
@@ -921,7 +1215,6 @@ footer {
         display: inline-block;
     }
 
-    
     .page_background {
         &::before {
             width: 140px;
@@ -1017,7 +1310,7 @@ footer {
         align-items: stretch;
         gap: 15px;
         padding-bottom: 0;
-
+        
         button {
             width: 255px;
             height: 40px;
@@ -1146,4 +1439,37 @@ footer {
         gap: 20px;
         margin-left: 0;
     }
+}
+@media (max-width: 425px) {
+  .form_discuss_right .form {
+    width: 100%;
+    height: auto;
+    padding: 25px 20px;
+    margin-top: 25px;
+  }
+
+  #form_field {
+    margin-left: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .form_f {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .form_section,
+  .form_section input,
+  .input_flag,
+  .input_flag input {
+    width: 100%;
+  }
+
+  #button_form {
+    width: 220px;
+    align-self: center;
+    margin: 10px auto 0;
+  }
 }
