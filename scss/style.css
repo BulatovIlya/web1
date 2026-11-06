@@ -427,7 +427,7 @@ label {
   padding: 10px;
 }
 .Full_Development_Cycle_right a:link, .Full_Development_Cycle_right a:visited {
-  color: #111111;
+  color: #101828;
   text-decoration: none;
 }
 .Full_Development_Cycle_right a:hover {
@@ -532,7 +532,7 @@ label {
   padding: 10px 16px;
 }
 .links a:link, .links a:visited {
-  color: #111111;
+  color: #101828;
   text-decoration: none;
 }
 .links a.active {
@@ -680,6 +680,9 @@ footer h2 {
 }
 
 @media (max-width: 768px) {
+  .br_mob {
+    display: inline-block;
+  }
   .page_background::before {
     width: 200px;
     right: 190px;
@@ -909,20 +912,18 @@ footer h2 {
   .page_background::before {
     width: 140px;
     right: 140px;
-    top: -10%;
     animation: moveColMobile1 20s linear infinite;
   }
   .page_background::after {
     width: 140px;
     right: -10px;
-    top: -10%;
     animation: moveColMobile2 20s linear infinite;
   }
   .form {
     width: 100%;
     height: auto;
     padding: 15px;
-    margin-top: 180px;
+    margin-top: 350px;
   }
   .form h2 {
     font-size: 18px;

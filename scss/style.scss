@@ -516,7 +516,7 @@ label {
 
         &:link,
         &:visited {
-            color: $color-dark:;
+            color: $color-dark;
             text-decoration: none;
         }
 
@@ -659,6 +659,9 @@ footer {
 
 
 @media (max-width: 768px) {
+      .br_mob {
+        display: inline-block;
+    }
     .page_background {
         &::before {
             width: 200px;
@@ -942,7 +945,7 @@ footer {
         width: 100%;
         height: auto;
         padding: 15px;
-        margin-top: 180px;
+        margin-top: 350px;
 
         h2 {
             font-size: 18px;
