@@ -926,14 +926,14 @@ footer {
         &::before {
             width: 140px;
             right: 140px;
-            top: -10%;
+            
             animation: moveColMobile1 20s linear infinite;
         }
 
         &::after {
             width: 140px;
             right: -10px;
-            top: -10%;
+            
             animation: moveColMobile2 20s linear infinite;
         }
     }
