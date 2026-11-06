@@ -1,6 +1,6 @@
 $font-main: "Inter", Arial, sans-serif;
 
-$color-primary: #2D66EE;
+$color-main: #2D66EE;
 $color-text-blue: #306FF5;
 $color-logo-blue: #0E62E6;
 $color-logo-sub: #00BFFF;
@@ -83,7 +83,7 @@ body {
 }
 
 .blue {
-    color: $color-primary;
+    color: $color-main;
 }
 
 .br_mob {
@@ -210,7 +210,7 @@ header {
     padding-right: 20px;
 
     a {
-        color: $color-primary;
+        color: $color-main;
     }
 }
 
@@ -260,7 +260,7 @@ header {
 
 .close-btn {
     font-size: 36px;
-    color: $color-primary;
+    color: $color-main;
     align-self: flex-start;
     line-height: 1;
     cursor: pointer;
@@ -329,7 +329,7 @@ label {
 }
 
 .button_form {
-    background-color: $color-primary;
+    background-color: $color-main;
     color: $color-white;
     width: 132px;
     height: 58px;
@@ -428,7 +428,7 @@ label {
 
             &:hover {
                 text-decoration: underline;
-                text-decoration-color: $color-primary;
+                text-decoration-color: $color-main;
                 cursor: pointer;
             }
         }
@@ -488,7 +488,7 @@ label {
     margin: 45px 0;
 
     &_button {
-        background-color: $color-primary;
+        background-color: $color-main;
         align-items: center;
         border-radius: 8px;
         @include flex(row, center, center);
@@ -526,7 +526,7 @@ label {
 
         &:hover {
             text-decoration: underline;
-            text-decoration-color: $color-primary;
+            text-decoration-color: $color-main;
             cursor: pointer;
         }
     }
@@ -789,7 +789,7 @@ footer {
             display: block;
             height: 3px;
             width: 100%;
-            background-color: $color-primary;
+            background-color: $color-main;
             border-radius: 2px;
         }
     }
