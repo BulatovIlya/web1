@@ -3,9 +3,11 @@
 *::after {
     box-sizing: border-box;
 }
-#view_100_768{
+
+#view_100_768 {
     display: none;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,240 @@ main {
 
 main p {
     font-size: 15px;
+}
+
+.Our_team {
+    background-color: #F2F4F7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 200px;
+    gap: 60px;
+}
+
+.Our_team_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Our_team_left h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.Our_team_desc {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+.team_stats span {
+    font-size: 36px;
+}
+
+.Our_team_bottom {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475467;
+    margin-top: 30px;
+}
+
+.Our_team_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Our_team_img img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.Our_team_img_mob {
+    display: none;
+}
+
+.book_section {
+    background-color: #2D66EE;
+    background-image: url("../img/Fr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.book_section_left {
+    flex: 1;
+    max-width: 550px;
+}
+
+.book_section_left h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.book_form {
+    width: 100%;
+    max-width: 440px;
+    min-height: auto;
+    padding: 25px;
+}
+
+.book_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.book_btn {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.book_section_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.book_section_right img {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+}
+
+.book_img_mob {
+    display: none;
+}
+
+.faq_section {
+    margin: 60px 80px;
+}
+
+.faq_section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.faq_container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.faq_col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq_item {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #EAECF0;
+}
+
+.faq_question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #101828;
+}
+
+.faq_icon {
+    font-size: 26px;
+    color: #2D66EE;
+    line-height: 1;
+}
+
+.faq_icon.close {
+    color: #98A2B3;
+}
+
+.faq_answer {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475467;
+    border-top: 1px solid #EAECF0;
+    padding-top: 16px;
+}
+
+.faq_answer p {
+    margin: 10px 0;
+}
+
+.Application_Development_Stages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+    width: 1224px;
+    height: 700px;
+    margin-left: 200px;
+}
+
+.Application_Development_Stages h2 {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Application_Development_Stages_left,
+.Application_Development_Stages_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Application_Development_Stages_card {
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Application_Development_Stages_up {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+.Application_Development_Stages_up img {
+    width: 48px;
+    height: 48px;
+}
+
+.Application_Development_Stages_down {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b5563;
+    margin: 0;
 }
 
 header {
@@ -630,80 +866,147 @@ address {
 #iteka_img_425 {
     display: none;
 }
-#view_100_768{
+
+#view_100_768 {
     display: none;
 }
 
 
 
-@media (max-width: 768px ) {
-    
-    .form_discuss_left p{
+@media (max-width: 768px) {
+    .Application_Development_Stages {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    .Our_team {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .Our_team_right {
+        display: none;
+    }
+
+    .Our_team_img_mob {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .book_section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .book_section_right {
+        display: none;
+    }
+
+    .book_img_mob {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .book_img_mob img {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .faq_section {
+        margin: 30px 20px;
+    }
+
+    .faq_container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form_discuss_left p {
         margin-left: 20px;
     }
-    .form_discuss_left{
+
+    .form_discuss_left {
         align-self: start;
     }
-    .text_and_img_page_3_left h2{
+
+    .text_and_img_page_3_left h2 {
         display: flex;
         justify-content: space-between;
     }
-    #view_100_768{
+
+    #view_100_768 {
         display: inline-block;
     }
-    
-    #view_100pc{
+
+    #view_100pc {
         display: none;
     }
-    .links{
+
+    .links {
         font-size: 12px;
-        
+
     }
-    
-    .br_pc{
+
+    .br_pc {
         display: none;
     }
-    .button_form{
+
+    .button_form {
         width: 190px;
         height: 40px;
     }
+
     .button_form {
         font-size: 14px;
     }
-    .mob-link{
+
+    .mob-link {
         font-size: 36px;
-        
+
     }
-    .form_field{
+
+    .form_field {
         flex-direction: column;
         align-items: stretch;
         gap: 20px;
     }
-    .form{
+
+    .form {
         width: 382px;
         height: 356px;
     }
-    .mob-link{
+
+    .mob-link {
         justify-content: center;
         display: flex;
     }
-    .mobile-menu-contacts{
+
+    .mobile-menu-contacts {
         display: flex;
         flex-direction: row;
     }
-    .contact_link{
+
+    .contact_link {
         display: flex;
         width: 172px;
     }
+
     .mobile-menu {
         align-items: center;
         gap: 5px;
         padding: 0;
 
     }
-    .contact_link{
+
+    .contact_link {
         font-size: 18px;
     }
+
     .mobile-menu-contacts .contact_group {
         display: flex;
         flex-direction: row;
@@ -711,27 +1014,33 @@ address {
         align-items: center;
         padding-bottom: 50px;
     }
-    .contact_group a{
+
+    .contact_group a {
         display: flex;
         text-decoration: none;
-        
+
     }
+
     .contact_group img {
         display: block;
         width: 28px;
         height: 28px;
     }
+
     .form {
         padding: 20px;
     }
-    .form_discuss_right .form{
+
+    .form_discuss_right .form {
         width: 600px;
         height: 190px;
     }
+
     .form h2 {
         margin-left: 0;
         padding-top: 0;
     }
+
     .header_pc {
         display: none;
     }
@@ -775,7 +1084,8 @@ address {
         margin: 30px 20px;
         column-gap: 50px;
     }
-    .Full_Development_Cycle p{
+
+    .Full_Development_Cycle p {
         font-size: 14px;
     }
 
@@ -826,7 +1136,7 @@ address {
         width: 100%;
     }
 
-    
+
 
     footer {
         margin: 0 20px 20px 20px;
@@ -838,13 +1148,13 @@ address {
         margin-left: 20px;
     }
 
-    
+
 
     #view_100425 {
         display: none;
     }
 
-    
+
 
     #iteka_img_425 {
         display: none;
@@ -855,30 +1165,80 @@ address {
 
 
 @media (max-width: 425px) {
-    
-    #view_100_768{
+
+    .Our_team {
+        padding: 25px 15px;
+    }
+
+    .Our_team_left h2 {
+        font-size: 26px;
+    }
+
+    .team_stats {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .team_stats span {
+        font-size: 28px;
+    }
+
+    .book_section {
+        padding: 25px 15px;
+    }
+
+    .book_section_left h2 {
+        font-size: 24px;
+    }
+
+    .book_form {
+        padding: 15px;
+    }
+
+    .faq_section {
+        margin: 20px 15px;
+    }
+
+    .faq_section h2 {
+        font-size: 24px;
+    }
+
+    .faq_question {
+        font-size: 15px;
+    }
+
+    .faq_item {
+        padding: 16px;
+    }
+    #view_100_768 {
         display: none;
     }
-    .footer_content{
+
+    .footer_content {
         width: 154px;
         height: 54px;
     }
-    .footer_content_row_img span{
+
+    .footer_content_row_img span {
         font-size: 10px;
     }
-    #footer_info{
+
+    #footer_info {
         flex-direction: row;
         flex-wrap: wrap;
         width: 375px;
         height: 142px;
         column-gap: 4px;
     }
-    .form_discuss p{
+
+    .form_discuss p {
         margin-left: 20px;
     }
-    .form_discuss_right .form{
+
+    .form_discuss_right .form {
         margin-top: 60px;
     }
+
     #iteka_img_425 {
         display: block;
         width: 340px;
@@ -1012,7 +1372,8 @@ address {
         gap: 15px;
         padding-bottom: 0;
     }
-    .form_field button{
+
+    .form_field button {
         width: 255px;
         height: 40px;
     }
